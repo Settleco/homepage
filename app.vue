@@ -58,6 +58,11 @@ export default {
         name: 'twitter:card',
         content: "summary_large_image",
       },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: "https://settleco.net/meta/banner_pride.png",
+      },
       /* Others */
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/ico/logo_transparant_pride.ico' }]
