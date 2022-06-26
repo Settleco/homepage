@@ -8,8 +8,8 @@
         <div class="ml-2">
           <p class="text-4xl font-semibold">Settleco.</p>
           <div class="">
-            <p class="text-gray-400 lg:flex">A tiny development company in 
-              <a href="https://wikipedia.org/wiki/%C4%B0zmir" class="hover:text-stone-600 transition ease-in flex">
+            <p class="text-stone-400 lg:flex">A tiny development company in 
+              <a href="https://wikipedia.org/wiki/%C4%B0zmir" class=" hover:text-stone-500 transition ease-in flex">
                 <svg class="w-6 h-6 lg:mx-1 mr-1 flex" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
                   </path>
@@ -20,11 +20,11 @@
           </div>
         </div>
       </div>
-      <div v-if="this.$route.path === `/`">
+      <div v-if="$route.path === `/`">
         <div class="mt-10">
           <div class="flex items-center">
             <p class="text-2xl font-medium">What we are doing??</p>
-            <p class=" text-xs text-stone-700 ml-2 md:visible invisible">tbh we dont know too! (jk)</p>
+            <p class=" text-xs text-stone-700 ml-2 md:visible">tbh we dont know too! (jk)</p>
           </div>
           <div class="ml-5 text-stone-400 md:w-2/3 w-10/12">
             <li >We have a team that consists of 1-5 people</li>
@@ -36,9 +36,9 @@
             <p class="text-2xl font-medium">Selected Work</p>
           </div>
           <div class="ml-5 text-stone-400 md:w-2/3 w-10/12">
-            <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="">MergeApp</a>, is a messaging app that respects your privacy and allows you to chat securely.</li>
-            <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="">RepeatPay</a>, is innovative payment solution for your websites.</li>
-            <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="">Constani</a>, is a website where you can watch Anime with a lot of extentions.</li>
+            <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="https://openani.me">OpenAnime</a>, is an open source anime platform that aims on community, security and speed. It provides some of the unique features that you will rarely see on an anime platform.</li>
+            <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="">Crdvisit</a>, is a social media platform where you can donate, get donate and use as your portfolio.</li>
+            <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="https://mergeapp.dev">MergeApp</a>, is a messaging app that respects your privacy and allows you to chat securely.</li>
           </div>
         </div>
         <div class="mt-10">

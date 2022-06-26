@@ -48,9 +48,19 @@ export default {
         name: 'og:description',
         content: description,
       },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: "https://settleco.net/meta/banner_pride.png",
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: description,
+      },
       /* Others */
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/logo.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/ico/logo_transparant_pride.ico' }]
   }
 }
 </script>
