@@ -54,9 +54,9 @@ export default {
         content: "https://settleco.net/meta/banner_pride.png",
       },
       {
-        hid: 'og:description',
-        name: 'og:description',
-        content: description,
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: "summary_large_image",
       },
       /* Others */
     ],
