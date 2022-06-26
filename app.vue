@@ -63,7 +63,7 @@ export default {
         name: 'twitter:image',
         content: "https://settleco.net/meta/banner_pride.png",
       },
-      /* Others */
+      /* test */
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/ico/logo_transparant_pride.ico' }]
   }
