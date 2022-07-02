@@ -37,7 +37,7 @@
           </div>
           <div class="ml-5 text-stone-400 md:w-2/3 w-10/12">
             <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="https://openani.me">OpenAnime</a>, is an open source anime platform that aims on community, security and speed. It provides some of the unique features that you will rarely see on an anime platform.</li>
-            <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="">Crdvisit</a>, is a social media platform where you can donate, get donate and use as your portfolio.</li>
+            <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="https://github.com/Settleco/crdvisit">Crdvisit</a>, is a social media platform where you can donate, get donate and use as your portfolio.</li>
             <li><a class="text-white underline decoration-solid underline-offset-2 hover:underline-offset-4 transition" href="https://mergeapp.dev">MergeApp</a>, is a messaging app that respects your privacy and allows you to chat securely.</li>
           </div>
         </div>
