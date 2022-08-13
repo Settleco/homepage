@@ -12,7 +12,7 @@ export default function Home() {
                           <form name="contact" method="POST" data-netlify="true" netlify class="space-y-4">
                               <div>
                                   <label class="sr-only" for="name">Name</label>
-                                  <input class="w-full p-3 text-sm border-gray-200 bg-black/20 rounded-lg" placeholder="Name" type="text" id="name" />
+                                  <input class="w-full p-3 text-sm border-gray-200 bg-black/20 rounded-lg" name="Name" placeholder="Name" type="text" id="name" />
                               </div>
 
                               <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -23,6 +23,7 @@ export default function Home() {
                                           placeholder="Email address"
                                           type="email"
                                           id="email"
+                                          name="email"
                                       />
                                   </div>
 
@@ -33,6 +34,7 @@ export default function Home() {
                                           placeholder="Phone Number"
                                           type="tel"
                                           id="phone"
+                                          name="phone"
                                       />
                                   </div>
                               </div>
@@ -44,6 +46,7 @@ export default function Home() {
                                       placeholder="Message"
                                       rows="8"
                                       id="message"
+                                      name="message"
                                   ></textarea>
                               </div>
 
