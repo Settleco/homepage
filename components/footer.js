@@ -1,0 +1,74 @@
+import Link from "next/link";
+
+export default function Footer() {
+    return (
+        <footer className="bg-[#222222]">
+            <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+                <img src="/logo_transparant.png" className="h-10 w-10" alt=""/>
+
+                <div className="grid grid-cols-1 gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <div>
+                        <p className="font-medium">
+                            Company
+                        </p>
+
+                        <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            <Link href="/">
+                                <a className="hover:opacity-75" href=""> Home </a>
+                            </Link>
+                            <Link href="/contact">
+                                <a className="hover:opacity-75" href=""> Contact </a>
+                            </Link>
+                            <Link href="/shop">
+                                <a className="hover:opacity-75" href=""> Shop </a>
+                            </Link>
+                            <a className="hover:opacity-75" href="https://status.settleco.net"> Status </a>
+                        </nav>
+                    </div>
+
+                    <div>
+                        <p className="font-medium">
+                            Helpful Links
+                        </p>
+
+                        <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            <a className="hover:opacity-75" href=""> Contact </a>
+                            <a className="hover:opacity-75" href=""> FAQs </a>
+                            <a className="hover:opacity-75" href=""> Live Chat </a>
+                        </nav>
+                    </div>
+
+                    <div>
+                        <p className="font-medium">
+                            Legal
+                        </p>
+
+                        <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            <a className="hover:opacity-75" href=""> Privacy Policy </a>
+                            <a className="hover:opacity-75" href=""> Terms & Conditions </a>
+                            <a className="hover:opacity-75" href=""> Returns Policy </a>
+                            <a className="hover:opacity-75" href=""> Accessibility </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div className="pt-8 mt-8 border-t border-stone-700 sm:items-center sm:justify-between sm:flex">
+                    <p className="text-xs text-gray-500">
+                        &copy; 2022 SettleCo, Inc. All rights reserved.
+                    </p>
+
+                    <a
+                       href="https://status.settleco.net" className="inline-flex items-center p-2 space-x-2 text-sm font-medium border border-stone-700 rounded">
+                        <span> Status: </span>
+
+                        <span className="w-3 h-3 bg-green-600 rounded-full"></span>
+
+                        <span className="font-medium text-green-600">
+                          All systems operational
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    )
+}

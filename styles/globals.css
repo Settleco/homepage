@@ -5,8 +5,24 @@
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 * {
     font-family: 'SF Pro Display', sans-serif;
+
 }
 
 body {
     @apply bg-[#222222] text-white
+}
+
+::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@keyframes transitionin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
