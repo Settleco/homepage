@@ -24,7 +24,7 @@ export default function Home() {
                               <span className="label-text dark:text-stone-700">What is your name?</span>
                               <span className="label-text-alt text-red-400 dark:text-red-600">Required</span>
                           </label>
-                          <input required placeholder="Type here" type="name" id="name" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
+                          <input required placeholder="Type here" type="name" name="name" id="name" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
                       </div>
                       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                           <div className="form-control w-full">
@@ -32,13 +32,13 @@ export default function Home() {
                                   <span className="label-text dark:text-stone-700">What is your E-Mail?</span>
                                   <span className="label-text-alt text-red-400 dark:text-red-600">Required</span>
                               </label>
-                              <input required placeholder="Type here" type="email" id="email" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
+                              <input required placeholder="Type here" type="email" name="email" id="email" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
                           </div>
                           <div className="form-control w-full">
                               <label className="label">
                                   <span className="label-text dark:text-stone-700">What is your Number?</span>
                               </label>
-                              <input placeholder="Type here" type="phone" id="phone" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
+                              <input placeholder="Type here" type="phone" name="phone" id="phone" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
                           </div>
                       </div>
                       <div className="form-control w-full mb-4">
