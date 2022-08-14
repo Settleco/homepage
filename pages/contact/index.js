@@ -17,49 +17,37 @@ export default function Home() {
               </div>
               <div className="p-8 bg-black/20 dark:bg-stone-200  rounded-lg lg:p-12 lg:col-span-3">
                   <form name="contact" data-netlify-recaptcha="true" action="/contact/success" method="POST"
-                        data-netlify="true" className="space-y-4">
+                        data-netlify="true" className="">
                       <input type="hidden" name="form-name" value="contact"/>
-                      <div>
-                          <label className="sr-only" htmlFor="name">Name</label>
-                          <input className="w-full p-3 text-sm border-gray-200 bg-black/20 dark:bg-stone-300 rounded-lg"
-                                 name="Name" placeholder="Name" type="text" id="name"/>
+                      <div className="form-control w-full">
+                          <label className="label">
+                              <span className="label-text dark:text-stone-700">What is your name?</span>
+                              <span className="label-text-alt text-red-400 dark:text-red-600">Required</span>
+                          </label>
+                          <input required placeholder="Type here" type="name" id="name" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
                       </div>
-
                       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                          <div>
-                              <label className="sr-only" htmlFor="email">Email</label>
-                              <input
-                                  className="w-full bg-black/20 p-3 text-sm border-gray-200 dark:bg-stone-300  rounded-lg"
-                                  placeholder="Email address"
-                                  type="email"
-                                  id="email"
-                                  name="email"
-                              />
+                          <div className="form-control w-full">
+                              <label className="label">
+                                  <span className="label-text dark:text-stone-700">What is your E-Mail?</span>
+                                  <span className="label-text-alt text-red-400 dark:text-red-600">Required</span>
+                              </label>
+                              <input required placeholder="Type here" type="email" id="email" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
                           </div>
-
-                          <div>
-                              <label className="sr-only" htmlFor="phone">Phone</label>
-                              <input
-                                  className=" bg-black/20 w-full p-3 text-sm border-gray-200 dark:bg-stone-300  rounded-lg"
-                                  placeholder="Phone Number"
-                                  type="tel"
-                                  id="phone"
-                                  name="phone"
-                              />
+                          <div className="form-control w-full">
+                              <label className="label">
+                                  <span className="label-text dark:text-stone-700">What is your Number?</span>
+                              </label>
+                              <input placeholder="Type here" type="phone" id="phone" className="input input-bordered bg-black/25 dark:bg-stone-300 w-full"/>
                           </div>
                       </div>
-
-                      <div>
-                          <label className="sr-only" htmlFor="message">Message</label>
-                          <textarea
-                              className="w-full bg-black/20 p-3 text-sm border-gray-200 dark:bg-stone-300  rounded-lg"
-                              placeholder="Message"
-                              rows="8"
-                              id="message"
-                              name="message"
-                          ></textarea>
+                      <div className="form-control w-full mb-4">
+                          <label className="label">
+                              <span className="label-text dark:text-stone-700">Finnaly, why did you contact us?</span>
+                              <span className="label-text-alt text-red-400 dark:text-red-600">Required</span>
+                          </label>
+                          <textarea required name="message" id="message" className="textarea textarea-bordered w-full bg-black/25 dark:bg-stone-300 " placeholder="Message"></textarea>
                       </div>
-
                       <div className="grid justify-items-center space-y-4">
                           <div className="g-recaptcha max-w-2xl" data-sitekey="6LfQoXUhAAAAAL74RQpAh6qPsabSxYZfNd3G2IYP"></div>
 
