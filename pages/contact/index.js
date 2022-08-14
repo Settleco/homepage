@@ -1,16 +1,11 @@
 import Head from "next/head";
+import Script from "next/script";
 
 export default function Home() {
-    var onloadCallback = function() {
-        grecaptcha.render('html_element', {
-            'sitekey' : 'your_site_key'
-        });
-    };
   return (
       <>
-          <Head>
-              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-          </Head>
+
+          <Script src="https://www.google.com/recaptcha/api.js" async defer></Script>
           <div className="md:w-5/12 w-11/12 mx-auto py-7 space-y-5">
               <div className="space-y-2 md:w-10/12">
                   <p className="text-2xl font-medium dark:text-stone-700">Contact Us.</p>
@@ -65,14 +60,12 @@ export default function Home() {
                           ></textarea>
                       </div>
 
-                      <div className="mt-4 space-x-2">
-                          <div data-netlify-recaptcha="true"></div>
-                          <div className="g-recaptcha" data-sitekey="6LfQoXUhAAAAAL74RQpAh6qPsabSxYZfNd3G2IYP"></div>
-                          <div id="html_element"></div>
+                      <div className="grid justify-items-center space-y-4">
+                          <div className="g-recaptcha max-w-2xl" data-sitekey="6LfQoXUhAAAAAL74RQpAh6qPsabSxYZfNd3G2IYP"></div>
 
                           <button
                               type="submit"
-                              className="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black/50 dark:bg-stone-500/75 rounded-lg sm:w-auto"
+                              className="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black/50 dark:bg-stone-500/75 rounded-lg"
                           >
                               <span className="font-medium"> Send  </span>
 
@@ -88,10 +81,10 @@ export default function Home() {
                               </svg>
                           </button>
                       </div>
+                      <div data-netlify-recaptcha="true"></div>
+
                   </form>
-                  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-                          async defer>
-                  </script>
+
               </div>
           </div>
       </>
