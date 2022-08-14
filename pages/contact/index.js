@@ -1,6 +1,3 @@
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
-
 export default function Home() {
   return (
       <div className="md:w-5/12 w-11/12 mx-auto py-7 space-y-5">
@@ -9,7 +6,7 @@ export default function Home() {
               <p className="text-stone-500">You can contact us via <a href="mailto:contact@settleco.net" className="text-stone-200 dark:text-stone-700">E-mail by clicking on this text</a>, but if you write via e-mail, we will most likely give you a late reply. Therefore, if you want to reach us, it would make more sense to fill out the form below.</p>
           </div>
           <div class="p-8 bg-black/20 dark:bg-stone-200  rounded-lg lg:p-12 lg:col-span-3">
-                          <form name="contact" method="POST" data-netlify="true" netlify class="space-y-4">
+                          <form name="contact" action="/contact/success" method="POST" data-netlify="true" netlify class="space-y-4">
                               <div>
                                   <label class="sr-only" for="name">Name</label>
                                   <input class="w-full p-3 text-sm border-gray-200 bg-black/20 dark:bg-stone-300 rounded-lg" name="Name" placeholder="Name" type="text" id="name" />
@@ -53,7 +50,6 @@ export default function Home() {
                               <div class="mt-4">
                                   <button
                                       type="submit"
-                                      action="/contact/success"
                                       class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black/50 dark:bg-stone-500/75 rounded-lg sm:w-auto"
                                   >
                                       <span class="font-medium"> Send  </span>
