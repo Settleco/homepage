@@ -6,7 +6,7 @@ export default function Home() {
               <p className="text-stone-500">You can contact us via <a href="mailto:contact@settleco.net" className="text-stone-200 dark:text-stone-700">E-mail by clicking on this text</a>, but if you write via e-mail, we will most likely give you a late reply. Therefore, if you want to reach us, it would make more sense to fill out the form below.</p>
           </div>
           <div class="p-8 bg-black/20 dark:bg-stone-200  rounded-lg lg:p-12 lg:col-span-3">
-                          <form name="contact" action="/contact/success" method="POST" data-netlify="true" class="space-y-4">
+                          <form name="contact" data-netlify-recaptcha="true" action="/contact/success" method="POST" data-netlify="true" class="space-y-4">
                               <input type="hidden" name="form-name" value="contact"/>
                               <div>
                                   <label class="sr-only" for="name">Name</label>
@@ -48,7 +48,8 @@ export default function Home() {
                                   ></textarea>
                               </div>
 
-                              <div class="mt-4">
+                              <div class="mt-4 space-x-2">
+                                  <div data-netlify-recaptcha="true"></div>
                                   <button
                                       type="submit"
                                       class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black/50 dark:bg-stone-500/75 rounded-lg sm:w-auto"
