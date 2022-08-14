@@ -9,7 +9,7 @@ export default function Home() {
           <div className="md:w-5/12 w-11/12 mx-auto py-7 space-y-5">
               <div className="space-y-2 md:w-10/12">
                   <p className="text-2xl font-medium dark:text-stone-700">Contact Us.</p>
-                  <p className="text-stone-500">You can contact us via <a href="mailto:contact@settleco.net"
+                  <p className="text-stone-500 md:text-base text-sm leading-6">You can contact us via <a href="mailto:contact@settleco.net"
                                                                           className="text-stone-200 dark:text-stone-700">E-mail
                       by clicking on this text</a>, but if you write via e-mail, we will most likely give you a late
                       reply. Therefore, if you want to reach us, it would make more sense to fill out the form below.
