@@ -1,25 +1,49 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
+
+
 export default function Home() {
+    function encode(data) {
+        return Object.keys(data)
+            .map(
+                (key) =>
+                    encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+            )
+            .join("&");
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({
+                "form-name": event.target.getAttribute("name"),
+                ...name,
+            }),
+        })
+            .then(() => navigate("/thank-you/"))
+            .catch((error) => alert(error));
+    };
   return (
       <div className="md:w-5/12 w-11/12 mx-auto py-7 space-y-5">
           <div className="space-y-2 md:w-10/12">
-              <p className="text-2xl font-medium">Contact Us.</p>
-              <p className="text-stone-500">You can contact us via <a href="mailto:contact@settleco.net" className="text-stone-200">E-mail by clicking on this text</a>, but if you write via e-mail, we will most likely give you a late reply. Therefore, if you want to reach us, it would make more sense to fill out the form below.</p>
+              <p className="text-2xl font-medium dark:text-stone-700">Contact Us.</p>
+              <p className="text-stone-500">You can contact us via <a href="mailto:contact@settleco.net" className="text-stone-200 dark:text-stone-700">E-mail by clicking on this text</a>, but if you write via e-mail, we will most likely give you a late reply. Therefore, if you want to reach us, it would make more sense to fill out the form below.</p>
           </div>
-          <div class="p-8 bg-black/20 rounded-lg lg:p-12 lg:col-span-3">
+          <div class="p-8 bg-black/20 dark:bg-stone-200  rounded-lg lg:p-12 lg:col-span-3">
                           <form name="contact" method="POST" data-netlify="true" netlify class="space-y-4">
                               <div>
                                   <label class="sr-only" for="name">Name</label>
-                                  <input class="w-full p-3 text-sm border-gray-200 bg-black/20 rounded-lg" name="Name" placeholder="Name" type="text" id="name" />
+                                  <input class="w-full p-3 text-sm border-gray-200 bg-black/20 dark:bg-stone-300 rounded-lg" name="Name" placeholder="Name" type="text" id="name" />
                               </div>
 
                               <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                                   <div>
                                       <label class="sr-only" for="email">Email</label>
                                       <input
-                                          class="w-full bg-black/20 p-3 text-sm border-gray-200 rounded-lg"
+                                          class="w-full bg-black/20 p-3 text-sm border-gray-200 dark:bg-stone-300  rounded-lg"
                                           placeholder="Email address"
                                           type="email"
                                           id="email"
@@ -30,7 +54,7 @@ export default function Home() {
                                   <div>
                                       <label class="sr-only" for="phone">Phone</label>
                                       <input
-                                          class=" bg-black/20 w-full p-3 text-sm border-gray-200 rounded-lg"
+                                          class=" bg-black/20 w-full p-3 text-sm border-gray-200 dark:bg-stone-300  rounded-lg"
                                           placeholder="Phone Number"
                                           type="tel"
                                           id="phone"
@@ -42,7 +66,7 @@ export default function Home() {
                               <div>
                                   <label class="sr-only" for="message">Message</label>
                                   <textarea
-                                      class="w-full bg-black/20 p-3 text-sm border-gray-200 rounded-lg"
+                                      class="w-full bg-black/20 p-3 text-sm border-gray-200 dark:bg-stone-300  rounded-lg"
                                       placeholder="Message"
                                       rows="8"
                                       id="message"
@@ -53,7 +77,8 @@ export default function Home() {
                               <div class="mt-4">
                                   <button
                                       type="submit"
-                                      class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black/50 rounded-lg sm:w-auto"
+                                      onSubmit={handleSubmit}
+                                      class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black/50 dark:bg-stone-500/75 rounded-lg sm:w-auto"
                                   >
                                       <span class="font-medium"> Send  </span>
 
@@ -72,4 +97,5 @@ export default function Home() {
                       </div>
       </div>
   )
+
 }
