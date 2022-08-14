@@ -53,6 +53,7 @@ export default function Home() {
                               <div class="mt-4">
                                   <button
                                       type="submit"
+                                      action="/contact/success"
                                       class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black/50 dark:bg-stone-500/75 rounded-lg sm:w-auto"
                                   >
                                       <span class="font-medium"> Send  </span>
