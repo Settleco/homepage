@@ -9,8 +9,16 @@ export default function Navbar({text}) {
     <div className="border-b border-stone-700 dark:border-stone-300 sticky top-0 dark:bg-white/50 bg-[#222222]/50 backdrop-blur-md">
         <div className="md:w-5/12 w-11/12 mx-auto py-5 flex justify-between items-center">
             <div className="font-medium flex items-center space-x-1">
-                <p className="hidden lg:block dark:text-stone-700">SettleCo. <span className="opacity-40">{text}</span></p>
-                <img src="/logo_transparant.png" className="h-6 w-6 lg:hidden block" alt=""/>
+                <Link href="/">
+                    <a className="hidden lg:block" href="">
+                        <p className=" dark:text-stone-700">SettleCo. <span className="opacity-40">{text}</span></p>
+                    </a>
+                </Link>
+                <Link href="/">
+                    <a href="">
+                        <img src="/logo_transparant.png" className="h-6 w-6 lg:hidden block" alt=""/>
+                    </a>
+                </Link>
             </div>
             <div className="text-base font-[450] text-stone-400 dark:text-stone-500 flex space-x-5">
                 <div className="lg:hidden block">
