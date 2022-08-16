@@ -17,8 +17,8 @@ export default function Footer() {
                                 <a className="hover:opacity-75" href=""> Home </a>
                             </Link>
 
-                            <Link href="/shop">
-                                <a className="hover:opacity-75" href=""> Shop </a>
+                            <Link href="/store">
+                                <a className="hover:opacity-75" href=""> Store </a>
                             </Link>
                             <a className="hover:opacity-75" href="https://status.settleco.net"> Status </a>
                         </nav>
