@@ -3,26 +3,17 @@
 @tailwind utilities;
 
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
-* {
-    font-family: 'SF Pro Display', sans-serif;
 
+* {
+    font-family: 'General Sans', sans-serif;
 }
 
 body {
-    @apply bg-[#222222] text-white dark:bg-gray-50
+    @apply bg-[#222222] text-white dark:bg-gray-50 font-normal
 }
 
 ::-webkit-scrollbar {
     display: none;
     visibility: hidden;
     opacity: 0;
-}
-
-@keyframes transitionin {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }

@@ -1,0 +1,8 @@
+.h1 {
+    @apply text-3xl pb-2 pt-8 font-medium
+}
+
+.li {
+    list-style-type: circle;
+    @apply py-1
+}
