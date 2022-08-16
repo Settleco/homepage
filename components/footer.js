@@ -16,9 +16,7 @@ export default function Footer() {
                             <Link href="/">
                                 <a className="hover:opacity-75" href=""> Home </a>
                             </Link>
-                            <Link href="/contact">
-                                <a className="hover:opacity-75" href=""> Contact </a>
-                            </Link>
+
                             <Link href="/shop">
                                 <a className="hover:opacity-75" href=""> Shop </a>
                             </Link>
@@ -32,7 +30,9 @@ export default function Footer() {
                         </p>
 
                         <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                            <a className="hover:opacity-75" href=""> Contact </a>
+                            <Link href="/contact">
+                                <a className="hover:opacity-75" href=""> Contact </a>
+                            </Link>
                             <a className="hover:opacity-75" href=""> FAQs </a>
                             <a className="hover:opacity-75" href=""> Live Chat </a>
                         </nav>
@@ -44,10 +44,12 @@ export default function Footer() {
                         </p>
 
                         <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                            <a className="hover:opacity-75" href=""> Privacy Policy </a>
-                            <a className="hover:opacity-75" href=""> Terms & Conditions </a>
-                            <a className="hover:opacity-75" href=""> Returns Policy </a>
-                            <a className="hover:opacity-75" href=""> Accessibility </a>
+                            <Link href="/legal/privacy-policy">
+                                <a className="hover:opacity-75"> Privacy Policy </a>
+                            </Link>
+                            <Link href="/legal/disclaimers">
+                                <a className="hover:opacity-75"> Disclaimers </a>
+                            </Link>
                         </nav>
                     </div>
                 </div>
