@@ -6,7 +6,7 @@ export default function Ogp({title}) {
         if (!title) {
                 title = "SettleCo."
         } else {
-                title = title + " | SettleCo"
+                title = title + " | SettleCo."
         }
         return (
         <Head>
