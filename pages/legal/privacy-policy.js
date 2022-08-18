@@ -1,8 +1,11 @@
 import style from "../../styles/legal.module.css"
+import Ogp from "../../components/ogp";
+
 
 export default function PrivacyPolicy(){
     return(
     <div className="w-7/12 mx-auto">
+        <Ogp title="Privacy Policy"/>
         <h1 className={style.h1}>Privacy Policy</h1>
         <p>Updated at 2022-08-15</p>
 

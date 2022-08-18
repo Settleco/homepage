@@ -1,8 +1,11 @@
 import style from "../../styles/legal.module.css"
+import Ogp from "../../components/ogp";
+
 
 export default function Disclaimers(){
     return(
     <div className="w-7/12 mx-auto">
+        <Ogp title="Disclaimers"/>
         <h1 className={style.h1}>Disclaimer</h1>
         <p>Updated at 2022-08-16</p>
 

@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Script from "next/script";
+import Ogp from "../../components/ogp";
+
 
 export default function Home() {
   return (
       <>
-
+        <Ogp title="Contact"/>
           <Script src="https://www.google.com/recaptcha/api.js" async defer></Script>
           <div className="md:w-5/12 w-11/12 mx-auto py-7 space-y-5">
               <div className="space-y-2 md:w-10/12">

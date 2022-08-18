@@ -1,9 +1,11 @@
 import { CONFIG } from "../../libs/config";
 import Link from "next/link";
+import Ogp from "../../components/ogp";
 
-export default function Home() {
+export default function Store() {
   return (
     <>
+        <Ogp title="Store"/>
       <div className="md:w-5/12 sm:w-7/12 w-11/12 mx-auto py-7 space-y-5">
         <div className="">
             <p className="text-2xl font-medium dark:text-stone-700">SettleCo Store.</p>
