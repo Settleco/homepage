@@ -1,9 +1,11 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Ogp from "../components/ogp";
 
 export default function Home() {
   return (
     <>
+        <Ogp />
         <div className="md:w-5/12 w-11/12 mx-auto py-7 space-y-5">
             <div className="flex items-center md:space-x-3">
                 <div>
