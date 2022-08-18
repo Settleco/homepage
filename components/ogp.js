@@ -18,10 +18,10 @@ export default function Ogp({title}) {
 
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://settleco.net"/>
-            <meta property="og:title" content={title + " | SettleCo."}/>
+            <meta property="og:title" content={title}/>
             <meta property="og:description" content="A tiny development company from Turkey, Izmir."/>
             <meta property="og:image" content="/banner_pride.png"/>
-            <meta property="theme-color" content="#ef603e"/>
+            <meta property="theme-color" content="#141414"/>
             <meta property="twitter:card" content="summary_large_image"/>
 
             <meta property="twitter:url" content="https://settleco.net"/>
